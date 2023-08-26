@@ -12,6 +12,7 @@ module Serverio
       content_type :json
     end
 
+    # curl -X GET host/state
     get '/state' do
       ::Serverio::State.new(
         `hostnamectl | grep 'Operating System' | cut -f2 -d ":"`,
