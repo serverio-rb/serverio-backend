@@ -47,7 +47,7 @@ $ bundle install
 3. Run `serverio-rb`:
 
 ```shell
-$ rackup --port 9292 --host 0.0.0.0
+$ rackup --host 0.0.0.0 --port 9292
 ```
 
 4. Go to [serverio_rb_flutter](https://github.com/serverio-rb/serverio_rb_flutter) for client or use `curl` (or
