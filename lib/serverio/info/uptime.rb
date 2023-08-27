@@ -5,7 +5,7 @@ require_relative 'base_info'
 module Serverio
   class Uptime < ::Serverio::BaseInfo
     def print
-      `uptime -p`
+      `uptime -p`.strip
     end
   end
 end

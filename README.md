@@ -20,11 +20,11 @@ $ curl -X GET 'host/state'
 
 ```json
 {
-  "os": " Ubuntu 22.04.2 LTS\n",
-  "arch": " x86-64\n",
-  "host": "host\n",
-  "kernel": "Kernel\n",
-  "uptime": "up 5 days, 1 hour, 39 minutes\n"
+  "os": " Ubuntu 22.04.2 LTS",
+  "arch": " x86-64",
+  "host": "host",
+  "kernel": "Kernel",
+  "uptime": "up 5 days, 1 hour, 39 minutes"
 }
 ```
 

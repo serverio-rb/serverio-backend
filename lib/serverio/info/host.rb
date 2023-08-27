@@ -5,7 +5,7 @@ require_relative 'base_info'
 module Serverio
   class Host < ::Serverio::BaseInfo
     def print
-      `hostname`
+      `hostname`.strip
     end
   end
 end
