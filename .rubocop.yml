@@ -8,6 +8,3 @@ AllCops:
 
 Style/Documentation:
   Enabled: false
-
-Metrics/ParameterLists:
-  Enabled: false
