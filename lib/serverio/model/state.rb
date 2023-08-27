@@ -1,8 +1,10 @@
 # frozen_string_literal: true
 
+require_relative '../info/base_info'
+
 module Serverio
   class State
-    # @param {String} os
+    # @param {BaseInfo} os
     # @param {String} arch
     # @param {String} host
     # @param {String} kernel
@@ -19,11 +21,11 @@ module Serverio
     # @return {Map}
     def to_map
       {
-        'os' => @os,
-        'arch' => @arch,
-        'host' => @host,
-        'kernel' => @kernel,
-        'uptime' => @uptime,
+        'os' => @os.print,
+        'arch' => @arch.print,
+        'host' => @host.print,
+        'kernel' => @kernel.print,
+        'uptime' => @uptime.print
       }
     end
   end
