@@ -6,14 +6,14 @@ Track your home server status by simple API.
 
 ## Methods
 
-### `/v1/state`
+### `/api/v1/state`
 
-Will return state of your server.
+Will returns state of your server.
 
 #### Call
 
 ```shell
-$ curl -X GET 'host/state'
+$ curl -X GET 'host/api/v1/state'
 ```
 
 #### Result

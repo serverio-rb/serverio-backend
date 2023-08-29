@@ -1,32 +1,20 @@
 # frozen_string_literal: true
 
+require 'dry-struct'
+require 'dry-types'
+
 require_relative '../info/base_info'
 
-module Serverio
-  class State
-    # @param {BaseInfo} os
-    # @param {String} arch
-    # @param {String} host
-    # @param {String} kernel
-    # @param {String} uptime
-    # @param {String} ruby
-    def initialize(os, arch, host, kernel, uptime)
-      @os = os
-      @arch = arch
-      @host = host
-      @kernel = kernel
-      @uptime = uptime
-    end
+module Types
+  include ::Dry.Types
+end
 
-    # @return {Map}
-    def to_map
-      {
-        'os' => @os.print,
-        'arch' => @arch.print,
-        'host' => @host.print,
-        'kernel' => @kernel.print,
-        'uptime' => @uptime.print
-      }
-    end
+module Serverio
+  class State < ::Dry::Struct
+    attribute :os, Types.Instance(::Serverio::BaseInfo)
+    attribute :arch, Types.Instance(::Serverio::BaseInfo)
+    attribute :host, Types.Instance(::Serverio::BaseInfo)
+    attribute :kernel, Types.Instance(::Serverio::BaseInfo)
+    attribute :uptime, Types.Instance(::Serverio::BaseInfo)
   end
 end
