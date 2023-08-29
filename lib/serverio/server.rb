@@ -17,8 +17,8 @@ module Serverio
       content_type :json
     end
 
-    # curl -X GET host/state
-    get '/state' do
+    # curl -X GET host/v1/state
+    get '/v1/state' do
       ::Serverio::State.new(
         ::Serverio::OS.new,
         ::Serverio::Arch.new,

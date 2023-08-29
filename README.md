@@ -6,7 +6,7 @@ Track your home server status by simple API.
 
 ## Methods
 
-### `/state`
+### `/v1/state`
 
 Will return state of your server.
 
