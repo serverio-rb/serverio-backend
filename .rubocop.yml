@@ -4,7 +4,7 @@ AllCops:
   SuggestExtensions: false
   NewCops: enable
   Exclude:
-    - 'test/**/test_*.rb'
+    - 'spec/**/*_spec.rb'
 
 Style/Documentation:
   Enabled: false
