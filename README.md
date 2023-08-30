@@ -63,6 +63,8 @@ Install dependencies:
 $ bundle install
 ```
 
+After that - make your features.
+
 ### Check before commit
 
 Read [Commit Convention](./COMMIT_CONVENTION.md). Make sure your build is green before you contribute your pull request.
@@ -71,6 +73,8 @@ Then:
 ```shell
 $ bundle exec rake
 ```
+
+If you don't see any error messages, submit your pull request.
 
 ## Contributors
 
