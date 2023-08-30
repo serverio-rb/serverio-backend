@@ -52,3 +52,26 @@ $ rackup --host 0.0.0.0 --port 9292
 
 4. Go to [serverio_rb_flutter](https://github.com/serverio-rb/serverio_rb_flutter) for client or use `curl` (or
    alternatives) to track your server status.
+
+## How to contribute
+
+### Prepare project
+
+Install dependencies:
+
+```shell
+$ bundle install
+```
+
+### Check before commit
+
+Read [Commit Convention](./COMMIT_CONVENTION.md). Make sure your build is green before you contribute your pull request.
+Then:
+
+```shell
+$ bundle exec rake
+```
+
+## Contributors
+
+* [@fartem](https://github.com/fartem) as Artem Fomchenkov
