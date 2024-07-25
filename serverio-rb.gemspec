@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.name = 'serverio-rb'
   s.version = '0.0.4'
   s.license = 'MIT'
-  s.files = Dir['lib/**/*.rb'] + %w[bin/frb README.md LICENSE CODE_OF_CONDUCT.md COMMIT_CONVENTION.md]
+  s.files = Dir['lib/**/*.rb']
   s.executable = 'serverio'
   s.require_paths << 'lib'
   s.summary = ''
